@@ -7,6 +7,8 @@
                  break;
     case "BSC" : echo "You have selected a BSC course";
                  break;
+    case "BSC Part Time" : echo "You have selected a BSC Part Time course";
+                 break;           
     default    : echo "No course selected";
   }
 ?>       
