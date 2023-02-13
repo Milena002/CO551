@@ -7,4 +7,12 @@
   {
 	echo "You are 21 years old or over<br/>";
   }
+  if ($_POST["txtgender"] == "male") 
+  {
+	echo "You are male <br/>";
+  }
+  else
+  {
+	echo "You are female <br/>";
+  }
 ?>
