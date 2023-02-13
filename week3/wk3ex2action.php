@@ -5,6 +5,6 @@
   }
   else
   {
-	echo "You are  21 years old or over<br/>";
+	echo "You are 21 years old or over<br/>";
   }
 ?>
