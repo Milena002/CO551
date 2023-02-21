@@ -1,5 +1,10 @@
 <?php
-   echo "<h2> Your order qty is:  $_POST[hdselqty] </h2>";
-   echo "<h2> And the selected colour is $_POST[selcolour].</h2>";
+$qty = $_POST['hdselqty'];
+$price = $_COOKIE['price'];
+$total = $qty * $price;
+   echo "<h1> Order Confirmation </h1>";
+   echo "<h2> Your order qty:  $_POST[hdselqty] </h2>";
+   echo "<h2> Selected colour: $_POST[selcolour]</h2>";
+   echo "<h2> Total price: £ $total </h2>";
 ?>
 
