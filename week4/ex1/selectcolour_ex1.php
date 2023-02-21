@@ -1,7 +1,7 @@
 <html>
   <head><title>Select colour page</title></head>
     <body>
-      <form action="confirmationex1.php"  method="post">
+      <form action="confirmation_ex1.php"  method="post">
 	Select the colour for the <?php echo $_POST["selqty"] ?> widgets you are ordering
    	<select name="selcolour">
    	  <option>white</option>

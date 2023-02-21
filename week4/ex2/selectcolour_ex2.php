@@ -1,12 +1,12 @@
 <html>
   <head><title>Select colour page</title></head>
     <body>
-    <?php 
-      session_start();
-      $_SESSION['selsize'] = $_POST['selsize'];?>
-      <form action="confirmation.php"  method="post">
-	    Select the colour for the <?php
-    echo $_SESSION['selqty'] ?> widgets you are ordering
+      <form action="confirmation_ex2.php"  method="post">
+	Select the colour for the
+    <?php
+    $cookieName = 'price';
+    setcookie($cookieName, $_POST['txtprice']);
+    echo $_POST["selqty"] ?> widgets you are ordering:
    	<select name="selcolour">
    	<option>white</option>
 	  <option>red</option>
@@ -15,6 +15,7 @@
 	  <option>blue</option>
         </select>
         <br/><br/>
+        <input type="hidden" name="hdselqty" value="<?php echo $_POST['selqty']?>"/>
         <input type="submit" value="Buy"/>
       </form>
    </body>
