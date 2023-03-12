@@ -1,14 +1,20 @@
 <?php
 	$sql = "INSERT INTO test (name,email,phone_number) ";
-	$sql = $sql . " values ('$_POST[txtName]','$_POST[txtEmail]','$_POST[txtPhoneNumber]’)";
+	$sql = $sql . " values ('$_POST[txtName]','$_POST[txtEmail]','$_POST[txtPhoneNumber]')";
 
 	// Connect to server and select database
+
+	$mysqli = new mysqli("localhost","root","","db2_22143664");
 	
+	$result = $mysqli -> query($sql);
+
 	// Execute sql statement		
 
 	$sql = "SELECT * from test";
 	
 	// Execute sql statement
+
+	$result = $mysqli -> query($sql);
 	
 	while ($row = mysqli_fetch_assoc($result))
 	{
