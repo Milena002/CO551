@@ -15,7 +15,7 @@
 </head>
 <body>
 <h2>Monster Details</h2>
-<form enctype="multipart/form-data" action="savemonster.php" method="post">
+<form enctype="multipart/form-data" action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
  Monster name :
  <input type="text" name="txtname" size="15" class="form-control" />
  </br></br>
