@@ -27,5 +27,8 @@
  </br></br>
  <input type="submit" class="btn btn-default" value="Save" />
 </form>
+</br>
+<?php save_inTable();
+?>
 </body>
 </html>
