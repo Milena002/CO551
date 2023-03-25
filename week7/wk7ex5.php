@@ -6,7 +6,7 @@
 <?php
     require"myfunctions.inc";
 
-    if($_POST['btnSubmit'])
+    if($_POST['submitbtn'])
     {
        save_monster();
     }
@@ -15,7 +15,7 @@
 </head>
 <body>
 <h2>Monster Details</h2>
-<form enctype="multipart/form-data" action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
+<form name="monsterDetails" enctype="multipart/form-data" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
  Monster name :
  <input type="text" name="txtname" size="15" class="form-control" />
  </br></br>
@@ -25,7 +25,7 @@
  Monster Sound :
  <input  type="file" name="monsteraudio" accept="audio/basic" class="form-control"  />
  </br></br>
- <input type="submit" class="btn btn-default" value="Save" />
+ <input type="submit" name="submitbtn" class="btn btn-default" value="Save" />
 </form>
 </br>
 <?php save_inTable();
